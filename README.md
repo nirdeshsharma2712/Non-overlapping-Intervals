@@ -23,7 +23,7 @@ Given an **array of intervals** intervals where `intervals[i] = [starti, endi]`,
 > **Traverse** until `j < n` (size of intervals):
 > - If end of `i ≤ start` of `j`, no overlap -> move `i = j`, then `j++`.
 > - Else if end of `i ≤ end` of `j`, overlap occurs -> remove interval `j`, increment `count`, then `j++`.
-> -Else (end of `i > end of j`), overlap occurs -> remove interval `i`, move `i = j`, `j++` ,  and increment `count`.
+> - Else (end of `i > end of j`), overlap occurs -> remove interval `i`, move `i = j`, `j++` ,  and increment `count`.
 
 - Return **count** as the minimum removals.
 
